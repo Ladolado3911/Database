@@ -5,7 +5,7 @@ class Doctor(object):
         self.phone_number = phone_number
         self.available = False
 
-    def availabe_button(self, button):
+    def available_button(self, button):
         try:
             button = button.lower()
             if button not in ["yes", "no"]:
@@ -50,7 +50,7 @@ doc2 = Doctor("gia", "599261699")
 doc1.available_button("yes")
 doc2.available_button("yes")
 
-Database.add_object_number(doc1)
-Database.add_object_number(doc2)
+data.add_object_number(doc1)
+data.add_object_number(doc2)
 
-print(Database.phonebook)
+print(data.phonebook)
